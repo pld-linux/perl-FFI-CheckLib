@@ -66,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
+%dir %{perl_vendorlib}/FFI
 %{perl_vendorlib}/FFI/CheckLib.pm
 %{_mandir}/man3/FFI::CheckLib.3pm*
 %{_examplesdir}/%{name}-%{version}
