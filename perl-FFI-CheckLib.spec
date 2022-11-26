@@ -7,13 +7,13 @@
 Summary:	FFI::CheckLib - Check that a library is available for FFI
 Summary(pl.UTF-8):	FFI::CheckLib - sprawdzanie, czy biblioteka jest dostępna dla FFI
 Name:		perl-FFI-CheckLib
-Version:	0.28
+Version:	0.31
 Release:	1
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/FFI/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f1098652dedd0b4616262524fa05a948
+# Source0-md5:	ffc8e61bb686dd631bed3ddf102af41c
 URL:		https://metacpan.org/release/FFI-CheckLib
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
