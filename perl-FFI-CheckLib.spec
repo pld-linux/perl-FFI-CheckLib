@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	FFI
 %define		pnam	CheckLib
@@ -12,15 +12,16 @@ Release:	1
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/FFI/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/FFI/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ffc8e61bb686dd631bed3ddf102af41c
-URL:		https://metacpan.org/release/FFI-CheckLib
+URL:		https://metacpan.org/dist/FFI-CheckLib
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl(Test2::API) >= 1.302015
-BuildRequires:	perl-Test2-Suite >= 0.000060
+BuildRequires:	perl-Scalar-List-Utils >= 1.33
+BuildRequires:	perl-Test2-Suite >= 0.000121
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
